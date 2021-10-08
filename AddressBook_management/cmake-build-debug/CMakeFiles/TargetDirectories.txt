@@ -1,0 +1,3 @@
+C:/Users/coolsyn/Desktop/code/AddressBook_management/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/coolsyn/Desktop/code/AddressBook_management/cmake-build-debug/CMakeFiles/AddressBook_management.dir
+C:/Users/coolsyn/Desktop/code/AddressBook_management/cmake-build-debug/CMakeFiles/rebuild_cache.dir
