@@ -12,8 +12,10 @@ int main() {
     int choice;
     while(true) {
         wm.Show_Menu();
+
         cout << "enter the choice:\n";
         cin >> choice;
+
         switch (choice) {
             case 0:
                 wm.Exit_Menu();

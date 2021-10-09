@@ -298,6 +298,7 @@ void WorkerManager::Add_Emp() {
     } else {
         cout << "wrong number\n";
     }
+
     system("pause");
     system("cls");
 
