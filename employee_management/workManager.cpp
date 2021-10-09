@@ -377,6 +377,8 @@ void WorkerManager::Clean_File() {
         }
         cout<<"clean successfully\n";
     }
+
     system("pause");
     system("cls");
+
 }
