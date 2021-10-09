@@ -22,12 +22,16 @@ int main() {
                 wm.Add_Emp();
                 break;
             case 2:
+                wm.Show_Emp();
                 break;
             case 3:
+                wm.Del_Emp();
                 break;
             case 4:
+                wm.Mod_Emp();
                 break;
             case 5:
+                wm.Find_Emp();
                 break;
             case 6:
                 break;

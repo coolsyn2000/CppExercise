@@ -8,9 +8,9 @@ Boss::Boss(int id, string name, int dId) {
     this->m_DeptId=dId;
 }
 void Boss::showInfo() {
-    cout<<"manager id :"<< this->m_Id<<"\t name:"<<this->m_Name
+    cout<<"id :"<< this->m_Id<<"\t name:"<<this->m_Name
         <<"\tdepartment:"<<this->getDeptName()
-        <<"\tJob: manage all the affairs of company\n";
+        <<"\t\tJob: manage all the affairs of company\n";
 }
 string Boss::getDeptName() {
     return string("boss");

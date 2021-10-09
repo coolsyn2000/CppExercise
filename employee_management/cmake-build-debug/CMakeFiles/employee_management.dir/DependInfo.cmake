@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/coolsyn/Desktop/code/employee_management/boss.cpp" "C:/Users/coolsyn/Desktop/code/employee_management/cmake-build-debug/CMakeFiles/employee_management.dir/boss.cpp.obj"
-  "C:/Users/coolsyn/Desktop/code/employee_management/employee.cpp" "C:/Users/coolsyn/Desktop/code/employee_management/cmake-build-debug/CMakeFiles/employee_management.dir/employee.cpp.obj"
-  "C:/Users/coolsyn/Desktop/code/employee_management/main.cpp" "C:/Users/coolsyn/Desktop/code/employee_management/cmake-build-debug/CMakeFiles/employee_management.dir/main.cpp.obj"
-  "C:/Users/coolsyn/Desktop/code/employee_management/manager.cpp" "C:/Users/coolsyn/Desktop/code/employee_management/cmake-build-debug/CMakeFiles/employee_management.dir/manager.cpp.obj"
-  "C:/Users/coolsyn/Desktop/code/employee_management/workManager.cpp" "C:/Users/coolsyn/Desktop/code/employee_management/cmake-build-debug/CMakeFiles/employee_management.dir/workManager.cpp.obj"
+  "C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/boss.cpp" "C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/cmake-build-debug/CMakeFiles/employee_management.dir/boss.cpp.obj"
+  "C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/employee.cpp" "C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/cmake-build-debug/CMakeFiles/employee_management.dir/employee.cpp.obj"
+  "C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/main.cpp" "C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/cmake-build-debug/CMakeFiles/employee_management.dir/main.cpp.obj"
+  "C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/manager.cpp" "C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/cmake-build-debug/CMakeFiles/employee_management.dir/manager.cpp.obj"
+  "C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/workManager.cpp" "C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/cmake-build-debug/CMakeFiles/employee_management.dir/workManager.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

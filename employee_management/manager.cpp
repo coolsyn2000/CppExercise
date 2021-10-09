@@ -8,7 +8,7 @@ Manager::Manager(int id, string name, int dId) {
     this->m_DeptId=dId;
 }
 void Manager::showInfo() {
-    cout<<"manager id :"<< this->m_Id<<"\t name:"<<this->m_Name
+    cout<<"id :"<< this->m_Id<<"\t name:"<<this->m_Name
         <<"\tdepartment:"<<this->getDeptName()
         <<"\tJob: finish the task from boss and hand out task to employees\n";
 }

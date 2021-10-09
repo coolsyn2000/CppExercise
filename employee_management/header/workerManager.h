@@ -23,7 +23,16 @@ public:
     void Show_Menu();
     void Exit_Menu();
     int m_EmpNum;
+    int get_EmpNum();
+    bool m_FileIsEmpty;
     Worker ** m_EmpArray;
     void Add_Emp();
+    void save();
+    void init_emp();
+    void Show_Emp();
+    void Del_Emp();
+    void Mod_Emp();
+    void Find_Emp();
+    int IsExist(int id);
     ~WorkerManager();
 };

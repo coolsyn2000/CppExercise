@@ -12,7 +12,7 @@ Employee::Employee(int id,string name,int dId)
     this->m_DeptId=dId;
 }
 void Employee::showInfo() {
-    cout<<"employee id :"<< this->m_Id<<"\t name:"<<this->m_Name
+    cout<<"id :"<< this->m_Id<<"\t name:"<<this->m_Name
     <<"\tdepartment:"<<this->getDeptName()
     <<"\tJob: finish the task\n";
 }
