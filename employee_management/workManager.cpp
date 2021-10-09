@@ -237,6 +237,49 @@ void WorkerManager::Exit_Menu() {
     exit(0);
 }
 
+void WorkerManager::Sort_Emp() {
+    if(this->m_FileIsEmpty)
+    {
+        cout<<"file does not exist or empty\n";
+        system("pause");
+        system("cls");
+    }
+    else
+    {
+        cout<<"rank method:\n1---up\t2---down\n";
+        int select=0;
+        cin>>select;
+        for(int i=0;i<this->m_EmpNum;i++)
+        {
+            int minORmax=i;
+            for(int j=i+1;j<this->m_EmpNum;j++)
+            if(select==1)
+            {
+                if(this->m_EmpArray[minORmax]->m_Id>this->m_EmpArray[j]->m_Id)
+                {
+                    minORmax=j;
+                }
+            }
+            else
+            {
+                if(this->m_EmpArray[minORmax]->m_Id<this->m_EmpArray[j]->m_Id)
+                {
+                    minORmax=j;
+                }
+            }
+            if(i!=minORmax)
+            {
+                Worker*temp=this->m_EmpArray[i];
+                this->m_EmpArray[i]=this->m_EmpArray[minORmax];
+                this->m_EmpArray[minORmax]=temp;
+            }
+        }
+        cout<<"rank successfully\n";
+        this->save();
+        this->Show_Emp();
+    }
+}
+
 void WorkerManager::Add_Emp() {
     cout << "enter number of employees\n";
     int addNum = 0;
@@ -251,55 +294,89 @@ void WorkerManager::Add_Emp() {
         }
         for (int i = 0; i < addNum; i++) {
             int id;
-            int ret;
+            bool flag=false;
+            int ret=0;
             string name;
             int dSelect = 0;
-            while(true) {
-                cout << "enter NO." << i + 1 << " id" << endl;
-                cin >> id;
-                ret = this->IsExist(id);
 
-                if (ret == -1) {
-                    cout << "enter NO." << i + 1 << " name" << endl;
-                    cin >> name;
-                    cout << "enter Department\n1.employee\n2.manager\n3.boss" << endl;
-                    cin >> dSelect;
-
-                    Worker *worker = NULL;
-                    switch (dSelect) {
-                        case 1:
-                            worker = new Employee(id, name, 1);
-                            break;
-                        case 2:
-                            worker = new Manager(id, name, 2);
-                            break;
-                        case 3:
-                            worker = new Boss(id, name, 3);
-                            break;
-                        default:
-                            break;
-                    }
-                    newSpace[this->m_EmpNum + i] = worker;
-
-                    delete[] this->m_EmpArray;
-                    this->m_EmpArray = newSpace;
-                    this->m_EmpNum = newSize;
-                    this->m_FileIsEmpty = false;
-                    cout << "add " << addNum << " person successfully\n";
-                    this->save();
-                    break;
+            while(ret!=-1) {
+                if(flag==false){
+                    cout << "enter NO." << i + 1 << " id" << endl;
                 }
                 else
                 {
-                    cout<<"id has existed already!\n";
+                    cout<<"id has already existed! enter a new id\n";
+                }
+                cin >> id;
+                ret=this->IsExist(id);
+                if(ret!=-1)
+                {
+                    flag=true;
                 }
             }
+
+
+            cout << "enter NO." << i + 1 << " name" << endl;
+            cin >> name;
+            cout << "enter Department\n1.employee\n2.manager\n3.boss" << endl;
+            cin >> dSelect;
+
+            Worker *worker = NULL;
+            switch (dSelect) {
+                case 1:
+                    worker = new Employee(id, name, 1);
+                    break;
+                case 2:
+                    worker = new Manager(id, name, 2);
+                    break;
+                case 3:
+                    worker = new Boss(id, name, 3);
+                    break;
+                default:
+                    break;
+            }
+            newSpace[this->m_EmpNum + i] = worker;
         }
-    } else {
+        delete[] this->m_EmpArray;
+        this->m_EmpArray = newSpace;
+        this->m_EmpNum = newSize;
+        this->m_FileIsEmpty = false;
+        cout << "add " << addNum << " person successfully\n";
+        this->save();
+    }
+
+    else {
         cout << "wrong number\n";
     }
 
     system("pause");
     system("cls");
 
+}
+
+void WorkerManager::Clean_File() {
+    cout<<"clean?\n";
+    cout<<"1---yes\t2---no\n";
+    int select=0;
+    cin>>select;
+    if(select==1)
+    {
+        ofstream ofs(FILENAME,ios::trunc);
+        ofs.close();
+        if(this->m_EmpArray!=NULL)
+        {
+            for(int i=0;i<this->m_EmpNum;i++)
+            {
+                delete this->m_EmpArray[i];
+                this->m_EmpArray[i]=NULL;
+            }
+            delete[] this->m_EmpArray;
+            this->m_EmpArray=NULL;
+            this->m_EmpNum=0;
+            this->m_FileIsEmpty=true;
+        }
+        cout<<"clean successfully\n";
+    }
+    system("pause");
+    system("cls");
 }

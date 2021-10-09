@@ -44,6 +44,22 @@ C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/header/manager.h
 boss.h
 C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/header/boss.h
 
+C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/main.cpp
+iostream
+-
+string
+-
+./header/worker.h
+C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/header/worker.h
+./header/workerManager.h
+C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/header/workerManager.h
+./header/employee.h
+C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/header/employee.h
+./header/manager.h
+C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/header/manager.h
+./header/boss.h
+C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/header/boss.h
+
 C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/workManager.cpp
 ./header/workerManager.h
 C:/Users/coolsyn/CLionProjects/CppExercise/employee_management/header/workerManager.h

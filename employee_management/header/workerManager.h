@@ -30,9 +30,11 @@ public:
     void save();
     void init_emp();
     void Show_Emp();
+    void Clean_File();
     void Del_Emp();
     void Mod_Emp();
     void Find_Emp();
+    void Sort_Emp();
     int IsExist(int id);
     ~WorkerManager();
 };
