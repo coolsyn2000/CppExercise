@@ -258,11 +258,13 @@ void WorkerManager::Add_Emp() {
                 cout << "enter NO." << i + 1 << " id" << endl;
                 cin >> id;
                 ret = this->IsExist(id);
+
                 if (ret == -1) {
                     cout << "enter NO." << i + 1 << " name" << endl;
                     cin >> name;
                     cout << "enter Department\n1.employee\n2.manager\n3.boss" << endl;
                     cin >> dSelect;
+
                     Worker *worker = NULL;
                     switch (dSelect) {
                         case 1:
