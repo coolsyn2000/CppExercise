@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/coolsyn/Desktop/SpeechCompetition/main.cpp
+iostream
+-
+speechManager.h
+C:/Users/coolsyn/Desktop/SpeechCompetition/speechManager.h
+string
+C:/Users/coolsyn/Desktop/SpeechCompetition/string
+ctime
+C:/Users/coolsyn/Desktop/SpeechCompetition/ctime
+
+C:/Users/coolsyn/Desktop/SpeechCompetition/speaker.h
+iostream
+C:/Users/coolsyn/Desktop/SpeechCompetition/iostream
+
+C:/Users/coolsyn/Desktop/SpeechCompetition/speechManager.h
+iostream
+C:/Users/coolsyn/Desktop/SpeechCompetition/iostream
+vector
+C:/Users/coolsyn/Desktop/SpeechCompetition/vector
+map
+C:/Users/coolsyn/Desktop/SpeechCompetition/map
+speaker.h
+C:/Users/coolsyn/Desktop/SpeechCompetition/speaker.h
+string
+C:/Users/coolsyn/Desktop/SpeechCompetition/string
+

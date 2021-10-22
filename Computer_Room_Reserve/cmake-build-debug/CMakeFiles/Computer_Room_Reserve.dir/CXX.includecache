@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/Identity.h
+iostream
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/iostream
+string
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/string
+vector
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/vector
+
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/globalFile.h
+
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/orderFile.h
+iostream
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/iostream
+map
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/map
+globalFile.h
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/globalFile.h
+
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/teacher.cpp
+teacher.h
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/teacher.h
+orderFile.h
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/orderFile.h
+
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/teacher.h
+iostream
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/iostream
+Identity.h
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/Identity.h
+

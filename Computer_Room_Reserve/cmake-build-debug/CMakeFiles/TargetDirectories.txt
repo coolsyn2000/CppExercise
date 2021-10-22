@@ -1,0 +1,3 @@
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/cmake-build-debug/CMakeFiles/Computer_Room_Reserve.dir
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/coolsyn/Desktop/code/Computer_Room_Reserve/cmake-build-debug/CMakeFiles/rebuild_cache.dir
